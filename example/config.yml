@@ -1,0 +1,31 @@
+common:
+  gh_access_token: ''
+  vault_enc_key: ''
+  gh_org: ''
+  gh_repo: ''
+
+clusters:
+  -
+    name: cluster-na-preprod-example
+    region: 'us-east-1'
+    env: 'preprod'
+  -
+    name: cluster-na-prod-example
+    region: us-east-1
+    env: prod
+  -
+    name: cluster-eu-preprod-example
+    region: eu-central-1
+    env: preprod
+  -
+    name: cluster-eu-prod-example
+    region: eu-central-1
+    env: prod
+  -
+    name: cluster-uk-preprod-example
+    region: eu-west-1
+    env: preprod
+  -
+    name: cluster-uk-prod-example
+    region: eu-west-1
+    env: prod
