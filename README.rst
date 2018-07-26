@@ -13,7 +13,7 @@ Usage from sphinx
 -----------------
 Run the following command, and pass in any of the :code:`cli parameters` from below:
 
-:code:`ecs-auditor --config <full_config_file_location> ... `
+:code:`ecs-auditor --config config.yml ...`
 
 CLI Parameters
 ------------------------
