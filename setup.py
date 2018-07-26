@@ -11,7 +11,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ecs-auditor',  # Required
-    version='1.0.0',  # Required
+    version='1.0.3',  # Required
     url='https://github.com/SpekoTechnologies/ecs-auditor',  # Optional
     author='Speko Technologies',  # Optional
     author_email='info@speko.io',  # Optional
