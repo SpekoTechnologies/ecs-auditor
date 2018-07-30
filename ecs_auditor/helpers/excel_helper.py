@@ -4,6 +4,7 @@ Excep Helper class to generate an excel list for the parameters
 import xlsxwriter
 import datetime
 import operator
+import ecs_auditor.config as config
 
 class ExcelHelper(object):
     """docstring for ExcelHelper.
@@ -31,7 +32,7 @@ class ExcelHelper(object):
             list
         '''
         # Create a workbook and add a worksheet.
-        workbook = xlsxwriter.Workbook("./data/ecs-auditor-{}.xlsx".format(datetime.datetime.now()))
+        workbook = xlsxwriter.Workbook("{}/ecs-auditor-{}.xlsx".format(config.settings['data_output_location'].rstrip('/'), datetime.datetime.now()))
         worksheet = workbook.add_worksheet()
         title_cell_format = workbook.add_format({'bold': True, 'font_color': 'red', 'font_size': '16'})
         entry_wrapping = workbook.add_format({'align': 'top'})

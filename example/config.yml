@@ -3,6 +3,7 @@ common:
   vault_enc_key: ''
   gh_org: ''
   gh_repo: ''
+  data_output_location: '.'
 
 clusters:
   -
