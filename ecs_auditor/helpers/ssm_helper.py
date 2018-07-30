@@ -58,7 +58,6 @@ class SsmHelper(object):
             str
 
         """
-        print "{}.{}.{}".format(prefix, application.replace('-', '_'), version)
         filters=[
             {
                 'Key': 'Name',

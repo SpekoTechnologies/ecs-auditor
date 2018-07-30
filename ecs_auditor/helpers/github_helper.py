@@ -86,9 +86,6 @@ class GithubHelper(object):
                 if "VAULT_{}".format(k) in secrets:
                     content[0]['tasks'][1]['param_pusher']['parameters'][k] = secrets["VAULT_" + k]
                 else:
-                    print v
-                    print "VAULT_{}".format(k)
-                    print secrets
                     content[0]['tasks'][1]['param_pusher']['parameters'][k] = "KEY NAME MISMATCH"
 
         return content[0]['tasks'][1]['param_pusher']['parameters']

@@ -81,7 +81,7 @@ class Client(object):
                                 author = ("".join(author).split('/')[-1:])[0]
                             except Exception as e:
                                 author = None
-                            github = GithubHelper().get_param_version_data(containerDefinition['name'], base.get_landscape(cluster['region']), cluster['env'])
+                            github = GithubHelper().get_param_version_data(containerDefinition['name'], base.get_landscape(cluster['region']), base.get_environment(cluster['env']))
                             version = regionEnv + "." + containerDefinition['name'].replace('-', '_') + "." + param['value']
                             ssm_version = ssm.get_param(version)
 
